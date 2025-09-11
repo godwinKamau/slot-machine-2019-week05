@@ -1,0 +1,16 @@
+#slot1 {
+    height:100px;
+    width:50px;
+}
+
+.blue {
+    background:blue;
+}
+
+.red {
+    background: red;
+}
+
+.green {
+    background: green;
+}
