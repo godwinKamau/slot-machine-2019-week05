@@ -2,26 +2,61 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>To-Do List</title>
+        <title>Slot Machine</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <div class="container">
-            <h1>Slot Machine</h1>
-            <h2>Total:</h2><span id="total"></span>
-            <h3>Bid: </h3><input id="bid" type="number">
-            <button id="begin">Start!</button>
-            <h4 id="message"></h4>
-            
-            <div id="slot1"></div>
-            <button id="starp">press</button>
+        <div class="big-container">
+            <div class="intro">
+                <section class="header">
+                    <h1>Slot Machine</h1>
+                </section>
+                <section class="message-board">
+                    <section class="message-container">
+                        <div></div>
+                        <div class="t-info">
+                            <h2>TOTAL</h2>
+                        </div>
+                        <div class="totle">
+                            <span id="total1"></span>
+                            <span id="total2"></span>
+                        </div>
+                        <div></div>
+                    </section>
+                    <section class="message-container">
+                        <h3>Bid: </h3><input id="bid" type="number">
+                    </section>
+                    <section class="message-container">
+                        <h4 id="message"></h4>
+                    </section>
+                </section>
+            </div>
+            <div class="game">
+                <div class="start">
+                    <button id="begin">Start!</button>
+                </div>
 
-            <div id="slot2"></div>
-            <button id="stort">press</button>
+                <div class="slots">
+                    <div class="slot">
+                        <div id="slot1"></div>
+                        <button id="starp">press</button>
+                    </div>
 
-            <div id="slot3"></div>
-            <button id="begend">press</button>
+                    <div class="slot">
+                        <div id="slot2"></div>
+                        <button id="stort">press</button>
+                    </div>
+
+                    <div class="slot">
+                        <div id="slot3"></div>
+                        <button id="begend">press</button>
+                    </div>
+                </div>
+            </div>
         </div>
     <script type="text/javascript" src="js/main.js"></script>
     </body>

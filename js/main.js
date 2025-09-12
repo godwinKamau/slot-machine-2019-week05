@@ -8,9 +8,15 @@ const slot = document.getElementById('slot1')
 const slot2 = document.getElementById('slot2')
 const slot3 = document.getElementById('slot3')
 
-const totalText = document.querySelector('#total')
+const totalText1 = document.querySelector('#total1')
+const totalText2 = document.querySelector('#total2')
+
 let total = 50
-totalText.innerText = total
+let totalText = String(total)
+totalText1.innerText = totalText[0]
+totalText2.innerText = totalText[1]
+
+
 const message = document.querySelector('#message')
 const matchChecker = []
 
@@ -23,7 +29,9 @@ function begin() {
 //check for money input. If money is there and not past the total, start the game
     if (total >= bid && bid !== 0) {
         total -= bid
-        totalText.innerText = total
+        totalText = String(total)
+        totalText1.innerText = totalText[0]
+        totalText2.innerText = totalText[1]
         interID = setInterval(randomColor,500)        
         interID2 = setInterval(randomColor2,500)
         interID3 = setInterval(randomColor3,500)    
@@ -93,9 +101,14 @@ function didYouWin() {
     if (interID || interID2 || interID3) {
         return }
     if (matchChecker[0]==matchChecker[1] && matchChecker[1]==matchChecker[2]) {
-        console.log('you did it!')
+        let bid = document.querySelector('#bid')
+        total += Number(bid.value) * 2
+        bid.value = ''
+        totalText = String(total)
+        totalText1.innerText = totalText[0]
+        totalText2.innerText = totalText[1]       
     } else {
-        console.log('it\'s my money now')
+        document.querySelector('#bid').value = ''
     }
     
 }

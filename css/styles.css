@@ -1,6 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-container {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background: gray;
+    min-width:60%;
+    min-height:100vh;
+}
+
+.intro {
+    height:20%;
+    background:black;
+    width:100%;
+}
+
+.header {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background:radial-gradient(
+                                white 25%,
+                                orange 75%,
+                                black 100%);
+
+    border:5px solid black;
+    border-bottom:10px solid black;
+    border-radius:20px;
+}
+
+.message-board {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-container {
+    width:33%;
+    background:radial-gradient(rgb(118, 30, 30) 80%, black);
+    border: 2px solid black;
+    border-bottom:5px solid black;
+
+}
+
+.message-container:first-of-type {
+    display: flex;
+    justify-content: center;
+}
+
+.message-container:first-of-type div {
+    flex:2
+}
+
+.t-info {
+    flex:2;
+    background: rgb(161, 14, 14);
+    margin:5px 3px;
+    border:2px dashed black;
+    border-radius:5px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(236, 55, 55);
+    font-size:16px;
+}
+
+.totle {
+    flex:1;
+    display: flex;
+    padding:3px;
+}
+
+#total1, #total2 {
+    background:linear-gradient(90deg,
+                            black,
+                            /* black 20%, */
+                            rgb(165, 0, 0) 30%,
+                            rgb(165, 0, 0) 50%,
+                            rgb(165, 0, 0) 70%,
+                            /* black 80%, */
+                            black);
+    height:100%;
+    width:50%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size:4rem;
+    color:gold;
+    font-family: 'Bitcount Prop Single',monospace;
+}
+
+.game {
+    height:80%;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+.start {
+    width:100%;
+    height:20%;
+}
+
+.slots {
+    width:100%;
+    display:flex;
+}
+
+.slot {
+    width:30%;
+}
+
 #slot1, #slot2, #slot3 {
     height:100px;
-    width:50px;
+    width:100%;
 }
 
 .blue {
