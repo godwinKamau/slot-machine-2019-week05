@@ -234,7 +234,7 @@ h4 {
     min-height:400px;
     max-height:400px;
     width:100%;
-    max-width:400px;
+    max-width:300px;
 }
 
 .buttons {
@@ -257,22 +257,57 @@ h4 {
     background-position: -30% 50%;
 }
 
-.blue {
-    background:blue;
+.blue1 {
+    background: url('assets/StockCake-Sunset\ Cowgirl\ Action_1757767258.jpg');
+    object-fit: cover;
+    /* background-position: 60% 20%; */
+    background-repeat: none;
 }
 
 .red2 {
     background: url('assets/StockCake-Cowboy\ Sunset\ Silhouette_1757728561.jpg');
     object-fit: cover;
     background-position-y: 50%;
+    background-repeat: no-repeat;
 }
 
-.green {
-    background: green;
+.blue2 {
+    background: url('assets/StockCake-Sunset\ Cowgirl\ Action_1757767258.jpg');
+    object-fit: cover;
+    background-position: 60% 35%;
+    background-repeat: no-repeat;
 }
 
 .red3 {
     background: url('assets/StockCake-Cowboy\ Sunset\ Silhouette_1757728561.jpg');
     object-fit: cover;
     background-position: 30% 50%;
+}
+
+.blue3 {
+    background: url('assets/StockCake-Sunset\ Cowgirl\ Action_1757767258.jpg');
+    object-fit: cover;
+    background-position: 95% 40%;
+    background-repeat: no-repeat;
+}
+
+.green1 {
+    background: url('assets/StockCake-Death\ Rides\ West_1757768496.jpg');
+    object-fit: cover;
+    background-position: 0 40%;
+    background-repeat: no-repeat;
+}
+
+.green2 {
+    background: url('assets/StockCake-Death\ Rides\ West_1757768496.jpg');
+    object-fit: cover;
+    background-position: 25% 40%;
+    background-repeat: no-repeat;
+}
+
+.green3 {
+    background: url('assets/StockCake-Death\ Rides\ West_1757768496.jpg');
+    object-fit: cover;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
 }

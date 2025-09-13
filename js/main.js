@@ -69,11 +69,11 @@ function spin3() {
 function randomColor() {
     const picker = Math.ceil(Math.random()*3)
     if (picker === 1) {
-        slot.className = 'blue'
+        slot.className = 'blue1'
     } else if (picker === 2) {
         slot.className = 'red1'
     } else if (picker === 3) {
-        slot.className = 'green'
+        slot.className = 'green1'
     }
     matchChecker[0] = picker
 }
@@ -81,11 +81,11 @@ function randomColor() {
 function randomColor2() {
     const picker = Math.ceil(Math.random()*3)
     if (picker === 1) {
-        slot2.className = 'blue'
+        slot2.className = 'blue2'
     } else if (picker === 2) {
         slot2.className = 'red2'
     } else if (picker === 3) {
-        slot2.className = 'green'
+        slot2.className = 'green2'
     }
     matchChecker[1] = picker
 }
@@ -93,11 +93,11 @@ function randomColor2() {
 function randomColor3() {
     const picker = Math.ceil(Math.random()*3)
     if (picker === 1) {
-        slot3.className = 'blue'
+        slot3.className = 'blue3'
     } else if (picker === 2) {
         slot3.className = 'red3'
     } else if (picker === 3) {
-        slot3.className = 'green'
+        slot3.className = 'green3'
     }
     matchChecker[2] = picker
 }
