@@ -36,9 +36,9 @@ function begin() {
         }
         totalText1.innerText = totalText[0]
         totalText2.innerText = totalText[1]
-        interID = setInterval(randomColor,500)        
-        interID2 = setInterval(randomColor2,500)
-        interID3 = setInterval(randomColor3,500)
+        interID = setInterval(randomColor,700)        
+        interID2 = setInterval(randomColor2,700)
+        interID3 = setInterval(randomColor3,700)
         message.innerText = 'press the buttons to stop the spins'    
     } else if (bid === 0 || total < bid) {
         message.innerText = 'Nice Try, Bub.'
