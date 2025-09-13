@@ -29,12 +29,17 @@ function begin() {
 //check for money input. If money is there and not past the total, start the game
     if (total >= bid && bid !== 0) {
         total -= bid
-        totalText = String(total)
+        if (total-10 < 0) {
+            totalText = '0' + String(total)
+        } else {
+            totalText = String(total)
+        }
         totalText1.innerText = totalText[0]
         totalText2.innerText = totalText[1]
         interID = setInterval(randomColor,500)        
         interID2 = setInterval(randomColor2,500)
-        interID3 = setInterval(randomColor3,500)    
+        interID3 = setInterval(randomColor3,500)
+        message.innerText = 'press the buttons to stop the spins'    
     } else if (bid === 0 || total < bid) {
         message.innerText = 'Nice Try, Bub.'
     }
@@ -66,7 +71,7 @@ function randomColor() {
     if (picker === 1) {
         slot.className = 'blue'
     } else if (picker === 2) {
-        slot.className = 'red'
+        slot.className = 'red1'
     } else if (picker === 3) {
         slot.className = 'green'
     }
@@ -78,7 +83,7 @@ function randomColor2() {
     if (picker === 1) {
         slot2.className = 'blue'
     } else if (picker === 2) {
-        slot2.className = 'red'
+        slot2.className = 'red2'
     } else if (picker === 3) {
         slot2.className = 'green'
     }
@@ -90,7 +95,7 @@ function randomColor3() {
     if (picker === 1) {
         slot3.className = 'blue'
     } else if (picker === 2) {
-        slot3.className = 'red'
+        slot3.className = 'red3'
     } else if (picker === 3) {
         slot3.className = 'green'
     }
@@ -104,11 +109,17 @@ function didYouWin() {
         let bid = document.querySelector('#bid')
         total += Number(bid.value) * 2
         bid.value = ''
-        totalText = String(total)
+        if (total-10 < 0) {
+            totalText = '0' + String(total)
+        } else {
+            totalText = String(total)
+        }
         totalText1.innerText = totalText[0]
         totalText2.innerText = totalText[1]       
+        message.innerText = 'you did it!'
     } else {
         document.querySelector('#bid').value = ''
+        message.innerText = 'oof...'
     }
     
 }

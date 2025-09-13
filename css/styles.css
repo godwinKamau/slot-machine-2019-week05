@@ -12,13 +12,13 @@ body {
     display: flex;
     flex-direction:column;
     align-items: center;
-    background: gray;
-    min-width:60%;
+    background: rgb(46, 46, 46);
+    width:60%;
     min-height:100vh;
 }
 
 .intro {
-    height:20%;
+    height:30%;
     background:black;
     width:100%;
 }
@@ -37,10 +37,19 @@ body {
     border-radius:20px;
 }
 
+h1 {
+    font-family: 'Arbutus', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: orangered;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 2px black;
+    font-size: 2rem;
+}
+
 .message-board {
     width:100%;
     display: flex;
     justify-content: space-between;
+    border-bottom: 3px solid black;
 }
 
 .message-container {
@@ -48,12 +57,10 @@ body {
     background:radial-gradient(rgb(118, 30, 30) 80%, black);
     border: 2px solid black;
     border-bottom:5px solid black;
-
-}
-
-.message-container:first-of-type {
+    padding:3% 0%;
     display: flex;
     justify-content: center;
+
 }
 
 .message-container:first-of-type div {
@@ -64,7 +71,7 @@ body {
     flex:2;
     background: rgb(161, 14, 14);
     margin:5px 3px;
-    border:2px dashed black;
+    border:2px dashed rgb(109, 27, 27);
     border-radius:5px;
 
     display:flex;
@@ -91,16 +98,90 @@ body {
                             black);
     height:100%;
     width:50%;
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
+    text-align: center; 
+    display:inline-block;
+    
     font-size:4rem;
     color:gold;
     font-family: 'Bitcount Prop Single',monospace;
 }
 
+.message-container:nth-of-type(2) {
+    display:flex;
+    gap:1%;
+}
+
+.message-container:nth-of-type(2) div{
+    flex:1
+}
+
+.instructions {
+    flex:2;
+    font-size: .8rem;
+    border-right:2px dashed rgb(236, 55, 55);
+    border-left:1px dashed rgb(153, 37, 37);
+    border-bottom:1px dashed rgb(153, 37, 37);
+    border-radius:5px;
+    text-align:right;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(236, 55, 55);
+    padding-right:2px;
+}
+
+.typer {
+    flex:2;
+}
+
+input[type="number"] {
+    height:92%;
+    text-align:center;
+    font-size: 2rem;
+    background:radial-gradient(rgb(113, 1, 1) 30%,
+                            black 100%);
+    width:100%;
+    color:gold;
+    font-family: 'Bitcount Prop Single',monospace;
+}
+
+.message {
+    width:80%;
+    max-width: 400px;
+    max-height: 160px;
+    height:100%;
+    border-radius: 15px;
+    border-style: 2px groove black;
+    text-align: center;
+}
+
+.gradient-pattern {
+  animation: gradient 4s ease infinite;
+  background-image: linear-gradient(135deg, rgb(0, 117, 0), rgb(0, 41, 12));
+  background-size: 400% 400%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
+}
+
+h4 {
+    font-family: 'Kode Mono',monospace;
+    color:gold;
+    text-transform: uppercase;
+    font-size:20px;
+}
+
 .game {
-    height:80%;
+    height:70%;
     width:100%;
     display:flex;
     flex-direction:column;
@@ -109,30 +190,89 @@ body {
 .start {
     width:100%;
     height:20%;
+    background: linear-gradient(gray, rgb(46, 46, 46));
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid black;
+    margin-bottom: 10px;
+}
+
+.start div {
+    height:100%;
+    padding:15px;
+    background: radial-gradient(rgb(118, 30, 30) 70%, black);
+    border-bottom: 5px solid black;
+    border-left:7px solid black;
+    border-right:7px solid black;
+}
+
+#begin {
+    border-radius: 100%;
+    height:100px;
+    width:100px;
+    background: radial-gradient(gold,black);
 }
 
 .slots {
     width:100%;
+    height:80%;
+    background: rgb(46, 46, 46);
     display:flex;
+    justify-content: space-around;
+    gap:3%;
 }
 
 .slot {
     width:30%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #slot1, #slot2, #slot3 {
-    height:100px;
+    min-height:400px;
+    max-height:400px;
     width:100%;
+    max-width:400px;
+}
+
+.buttons {
+    width:100%;
+    background: linear-gradient( rgb(46, 46, 46),gray);
+    display:flex;
+    justify-content: space-around;
+    border-top: 3px solid black;;
+}
+
+.buttons button {
+    height: 100px;
+    width:100px;
+    border-radius: 100%;
+}
+
+.red1 {
+    background: url('assets/StockCake-Cowboy\ Sunset\ Silhouette_1757728561.jpg');
+    object-fit: cover;
+    background-position: -30% 50%;
 }
 
 .blue {
     background:blue;
 }
 
-.red {
-    background: red;
+.red2 {
+    background: url('assets/StockCake-Cowboy\ Sunset\ Silhouette_1757728561.jpg');
+    object-fit: cover;
+    background-position-y: 50%;
 }
 
 .green {
     background: green;
+}
+
+.red3 {
+    background: url('assets/StockCake-Cowboy\ Sunset\ Silhouette_1757728561.jpg');
+    object-fit: cover;
+    background-position: 30% 50%;
 }

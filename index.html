@@ -6,14 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arbutus&family=Bitcount+Prop+Single:wght@100..900&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <div class="big-container">
             <div class="intro">
                 <section class="header">
-                    <h1>Slot Machine</h1>
+                    <h1>SLOT MACHINE</h1>
                 </section>
                 <section class="message-board">
                     <section class="message-container">
@@ -28,33 +28,45 @@
                         <div></div>
                     </section>
                     <section class="message-container">
-                        <h3>Bid: </h3><input id="bid" type="number">
+                        <div></div>
+                        <div class="instructions"><h3>TYPE IN YOUR BID HERE</h3></div>
+                        <div class="typer"><input id="bid" type="number"></div>
+                        <div></div>
                     </section>
                     <section class="message-container">
-                        <h4 id="message"></h4>
+                        <section class="message gradient-pattern">
+                            <h4 id="message">place a bid and press start</h4>
+                        </section>
                     </section>
                 </section>
             </div>
             <div class="game">
                 <div class="start">
-                    <button id="begin">Start!</button>
+                    <div>
+                        <button id="begin">Start!</button>
+                    </div>
                 </div>
 
                 <div class="slots">
                     <div class="slot">
                         <div id="slot1"></div>
-                        <button id="starp">press</button>
+                        
                     </div>
 
                     <div class="slot">
                         <div id="slot2"></div>
-                        <button id="stort">press</button>
+                        
                     </div>
 
                     <div class="slot">
                         <div id="slot3"></div>
-                        <button id="begend">press</button>
+                        
                     </div>
+                </div>
+                <div class="buttons">
+                    <button id="starp">press</button>
+                    <button id="stort">press</button>
+                    <button id="begend">press</button>
                 </div>
             </div>
         </div>
