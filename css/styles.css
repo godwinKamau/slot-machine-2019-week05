@@ -194,7 +194,6 @@ h4 {
     display: flex;
     justify-content: center;
     border-bottom: 3px solid black;
-    margin-bottom: 10px;
 }
 
 .start div {
@@ -226,8 +225,9 @@ h4 {
     width:30%;
     height:100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:4px;
 }
 
 #slot1, #slot2, #slot3 {
@@ -235,6 +235,8 @@ h4 {
     max-height:400px;
     width:100%;
     max-width:300px;
+    border:5px ridge black;
+    border-start-end-radius: 1em 2em;
 }
 
 .buttons {
@@ -253,41 +255,41 @@ h4 {
 
 .red1 {
     background: url('assets/StockCake-Cowboy\ Sunset\ Silhouette_1757728561.jpg');
-    object-fit: cover;
-    background-position: -30% 50%;
-}
-
-.blue1 {
-    background: url('assets/StockCake-Sunset\ Cowgirl\ Action_1757767258.jpg');
-    object-fit: cover;
-    /* background-position: 60% 20%; */
-    background-repeat: none;
+    background-size: cover;
+    background-position: 0 50%;
 }
 
 .red2 {
     background: url('assets/StockCake-Cowboy\ Sunset\ Silhouette_1757728561.jpg');
-    object-fit: cover;
-    background-position-y: 50%;
-    background-repeat: no-repeat;
-}
-
-.blue2 {
-    background: url('assets/StockCake-Sunset\ Cowgirl\ Action_1757767258.jpg');
-    object-fit: cover;
-    background-position: 60% 35%;
+    background-size: cover;
+    background-position: 60% 50%;
     background-repeat: no-repeat;
 }
 
 .red3 {
     background: url('assets/StockCake-Cowboy\ Sunset\ Silhouette_1757728561.jpg');
-    object-fit: cover;
-    background-position: 30% 50%;
+    background-size: cover;
+    background-position: 90% 50%;
+}
+
+.blue1 {
+    background: url('assets/StockCake-Sunset\ Cowgirl\ Action_1757767258.jpg');
+    background-size: 300% 100%;
+    /* background-position: 60% 20%; */
+    background-repeat: none;
+}
+
+.blue2 {
+    background: url('assets/StockCake-Sunset\ Cowgirl\ Action_1757767258.jpg');
+    background-size: 300% 100%;
+    background-position: 50% 35%;
+    background-repeat: no-repeat;
 }
 
 .blue3 {
     background: url('assets/StockCake-Sunset\ Cowgirl\ Action_1757767258.jpg');
-    object-fit: cover;
-    background-position: 95% 40%;
+    background-size: 300% 100%;
+    background-position: 100% 40%;
     background-repeat: no-repeat;
 }
 
@@ -309,5 +311,33 @@ h4 {
     background: url('assets/StockCake-Death\ Rides\ West_1757768496.jpg');
     object-fit: cover;
     background-position: 50% 40%;
+    background-repeat: no-repeat;
+}
+
+.cosmic {
+    background: url('assets/StockCake-Cosmic\ Rodeo\ Lasso_1757771173.jpg');
+    background-size:100% 100%;
+    /* background-position: 50% 60%; */
+    background-repeat: no-repeat;
+}
+
+.cactus {
+    background: url('assets/StockCake-Australian\ Outback\ Stockman_1757768509.jpg');
+    background-size: 300% 100%;
+    background-position: 12% 40%;
+    background-repeat: no-repeat;
+}
+
+.cactus2 {
+    background: url('assets/StockCake-Australian\ Outback\ Stockman_1757768509.jpg');
+    background-size: 300% 100%;
+    background-position: 65% 40%;
+    background-repeat: no-repeat;
+}
+
+.cactus3 {
+    background: url('assets/StockCake-Australian\ Outback\ Stockman_1757768509.jpg');
+    background-size: 300% 100%;
+    background-position: 80% 40%;
     background-repeat: no-repeat;
 }
