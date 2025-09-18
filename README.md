@@ -1,4 +1,4 @@
-# 🎰 Week05 Bootcamp2019 Project: Slot Machine
+# Slot Machine Synopsis
 
 ### Goal: Build a Simple Slot Machine
 
@@ -36,3 +36,49 @@ The total is given a set number in the HTML and changed after the end of the bid
 
 ## Now, let's talk about the FUNction
 
+`setInterval()` allows the user to call a funtction on a fixed interval automatically. Which is pretty friggin' sweet. Here is the [MDN article](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval) about it. In the MDN, it is used to change the color of a text every 1000ms by changing its class (using `.className`). 
+
+Using this logic, we can leverage a section's class to change anything we want within it at a fixed interval, including its _background picture_. 
+
+To put it in code, it would look something like this:
+
+**HTML**
+```
+<div id="pic">
+</div>
+```
+
+ **CSS**
+ ```
+ div {
+    width: 300px;
+    height: 500px;
+ }
+
+.firstPic {
+    backgroud: url('<PATH TO PICTURE>');
+    background-size: cover;
+}
+
+.secondPic {
+    backgroud: url('<PATH TO DIFFERENT PICTURE>');
+    background-size: cover;
+}
+ ```
+
+ **JS**
+ ```
+//intervalID is important to set the interval
+let intervalID
+
+function startInterval() {
+    //here the intervalID is assigned to the setInterval() function, passed a function, and given a set delay
+    intervalID = setInterval(changePic,500)
+}
+
+//pass conditional logic to the function to represent the change
+function changePic() {
+    const picture = document.getElementById("pic")
+    picture.className = picture.className === "firstPic" ? "secondPic" : "firstPic"
+}
+ ```
