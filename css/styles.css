@@ -173,6 +173,8 @@ input[type="number"] {
   }
 }
 
+/* found this css animation by Geoff Graham on the css guides: https://css-tricks.com/a-complete-guide-to-css-gradients/#h-tricks */
+
 h4 {
     font-family: 'Kode Mono',monospace;
     color:gold;
