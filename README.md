@@ -6,6 +6,16 @@ Build a simple slot machine with minimum 5 items per reel and 3 reels - user sho
 
 <hr />
 
+<img src="./Screenshot 2025-11-13 at 2.10.29 PM.png">
+
+<hr />
+
+### Live Demo
+
+[Here is the demo](https://godwinkamau.github.io/slot-machine-2019-week05/)
+
+<hr />
+
 ## In this project, I learned about:
 
 ### Git and GitHub
